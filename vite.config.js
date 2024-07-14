@@ -11,7 +11,6 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -22,6 +21,7 @@ export default defineConfig(({ command }) => {
           },
           entryFileNames: 'commonHelpers.js',
         },
+        external: ['/node_modules/flatpickr/dist/flatpickr.min.js'], // Dodaj to
       },
       outDir: '../dist',
     },
