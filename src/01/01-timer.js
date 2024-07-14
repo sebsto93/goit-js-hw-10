@@ -12,6 +12,8 @@ const secondsSpan = document.querySelector('[data-seconds]');
 
 let countdown;
 
+startButton.disabled = true;
+
 const options = {
   enableTime: true,
   time_24hr: true,
