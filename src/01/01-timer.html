@@ -4,32 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
-    />
-    <style>
-      .timer {
-        display: flex;
-        gap: 10px;
-      }
-      .field {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .value {
-        font-size: 2em;
-      }
-    </style>
   </head>
   <body>
     <input type="text" id="datetime-picker" />
-    <button type="button" data-start disabled>Start</button>
+    <button type="button" data-start>Start</button>
 
     <div class="timer">
       <div class="field">
@@ -49,9 +27,5 @@
         <span class="label">Seconds</span>
       </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
-    <script src="01-timer.js"></script>
   </body>
 </html>
