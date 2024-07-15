@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    form.reset();
+
     const delayPromise = new Promise((resolve, reject) => {
       setTimeout(() => {
         if (state === 'fulfilled') {
@@ -34,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
           message: `✅ Fulfilled promise in ${delay}ms`,
           position: 'topRight',
         });
-        form.reset();
       },
       delay => {
         iziToast.error({
@@ -42,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
           message: `❌ Rejected promise in ${delay}ms`,
           position: 'topRight',
         });
-        form.reset();
       }
     );
   });
