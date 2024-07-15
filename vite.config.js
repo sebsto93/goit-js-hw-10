@@ -19,9 +19,8 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
-          entryFileNames: 'commonHelpers.js',
+          entryFileNames: 'assets/[name].js',
         },
-        external: ['/node_modules/flatpickr/dist/flatpickr.min.js'], // Dodaj to
       },
       outDir: '../dist',
     },
