@@ -34,7 +34,7 @@ const options = {
   },
 };
 
-flatpickr(datetimePicker, options);
+flatpickr('#datetimePicker', options);
 
 startButton.addEventListener('click', () => {
   const endDate = new Date(datetimePicker.value);
