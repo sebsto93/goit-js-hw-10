@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
           message: `❌ Rejected promise in ${delay}ms`,
           position: 'topRight',
         });
+        form.reset();
       }
     );
   });
